@@ -1,0 +1,51 @@
+.header{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    background: $header-bg;
+    font-family: $header-bg;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profil{
+    display: flex;
+    position: relative;
+}
+.profil-circle{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: grey;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+}
+.profil-setting{
+    display: none;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    background: $white;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    box-shadow: 10px 6px 258px -21px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+.profilclass{
+    display: flex;
+}
+.profil-setting__item{
+    text-wrap: nowrap;
+    padding: 10px;
+    transition: .3s ease-in-out;
+    z-index: 1;
+}
+.profil-setting__item:hover{
+    background: rgba(182, 182, 182, 0.271);
+}
+
+

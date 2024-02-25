@@ -1,0 +1,81 @@
+.siderbar{
+    width: 200px;
+    height: 100%;
+    background: red;
+    z-index: 2;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 265px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: $sidebar-bg;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a, .dropdown-btn {
+    font-family: $rb-medium;
+    font-size: $big-txt;
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    color: $sidebar-menu-deafoult;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    gap: 8px;
+  }
+.sidenav-item__icon{
+    width: 16px;
+    height: auto;
+}
+  .sidenav .sidenav-item:hover, .dropdown-btn:hover {
+    color: $white;
+    background: #525C73;
+  }
+
+  .main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+  }
+  
+  .active {
+    background-color: #525C73;
+    color: white;
+  }
+  
+  .dropdown-container {
+    display: none;
+    background-color: #7e7e7e53;
+    padding-left: 8px;
+  }
+  .drop-item{
+    transition: .3s ease-in-out;
+  }
+  .drop-item:hover{
+    margin-left: 5px;
+  }
+  
+//   .fa-caret-down {
+//     float: right;
+//     padding-right: 8px;
+//   }

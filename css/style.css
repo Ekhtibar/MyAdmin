@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0px 40px 0px 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.content-container {
+  padding: 0px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0px 20px 0px 20px;
+  }
+  .content-container {
+    padding: 0px;
+  }
+}
+@font-face {
+  font-family: "Roboto Thin";
+  src: url("../assets/fonts/Roboto-Thin.eot");
+  src: url("../assets/fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Thin.woff") format("woff"), url("../assets/fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../assets/fonts/Roboto-Light.eot");
+  src: url("../assets/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Light.woff") format("woff"), url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../assets/fonts/Roboto-Regular.eot (1)");
+  src: url("../assets/fonts/Roboto-Regular (1).eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Regular.woff (1)") format("woff"), url("../assets/fonts/Roboto-Regular.ttf (1)") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../assets/fonts/Roboto-Medium.eot (1)");
+  src: url("../assets/fonts/Roboto-Medium (1).eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Medium (1).woff") format("woff"), url("../assets/fonts/Roboto-Medium (1).ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../assets/fonts/Roboto-Bold (1).eot");
+  src: url("../assets/fonts/Roboto-Bold (1).eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Bold (1).woff") format("woff"), url("../assets/fonts/Roboto-Bold (1).ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  background: #383B65;
+  font-family: #383B65;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profil {
+  display: flex;
+  position: relative;
+}
+
+.profil-circle {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: grey;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profil-setting {
+  display: none;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+  background: #fff;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  box-shadow: 10px 6px 258px -21px rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.profilclass {
+  display: flex;
+}
+
+.profil-setting__item {
+  text-wrap: nowrap;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.profil-setting__item:hover {
+  background: rgba(182, 182, 182, 0.271);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  background: #383B65;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.siderbar {
+  width: 200px;
+  height: 100%;
+  background: red;
+  z-index: 2;
+  height: 100%;
+  position: absolute;
+}
+
+.sidenav {
+  height: 100%;
+  width: 265px;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #A1A7B4;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 16px;
+  padding: 10px 8px 10px 16px;
+  text-decoration: none;
+  color: #EFEFEF;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  gap: 8px;
+}
+
+.sidenav-item__icon {
+  width: 16px;
+  height: auto;
+}
+
+.sidenav .sidenav-item:hover, .dropdown-btn:hover {
+  color: #fff;
+  background: #525C73;
+}
+
+.main {
+  margin-left: 200px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.active {
+  background-color: #525C73;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: rgba(126, 126, 126, 0.3254901961);
+  padding-left: 8px;
+}
+
+.drop-item {
+  transition: 0.3s ease-in-out;
+}
+
+.drop-item:hover {
+  margin-left: 5px;
+}/*# sourceMappingURL=style.css.map */

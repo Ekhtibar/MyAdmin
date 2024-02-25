@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    background: $header-bg;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+}
